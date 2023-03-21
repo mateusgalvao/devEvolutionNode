@@ -4,12 +4,12 @@ const usuariosController = new(require('../controllers/api/Usuarios'));
 
 const validate = require('./auth/validate');
 
-router.get('/', usuariosController.find);
-router.get('/:id', usuariosController.findOne);
+router.get('/',validate(), usuariosController.find);
+router.get('/:id',validate(), usuariosController.findOne);
 router.post('/cadastro', usuariosController.cadastroUsuario);
 router.post('/login', validate() ,usuariosController.login);
-router.post('/gerarToken', usuariosController.gerarToken);
-router.put('/:id',usuariosController.updateOne);
-router.delete('/:id', usuariosController.deleteOne);
+router.post('/gerarToken',validate(), usuariosController.gerarToken);
+router.put('/:id',validate(), usuariosController.updateOne);
+router.delete('/:id',validate(), usuariosController.deleteOne);
 
 module.exports = router;
