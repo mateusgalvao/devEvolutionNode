@@ -8,33 +8,39 @@
   </head>
   
   <body>
-  
+ 
+    <div class="cadMnu">
+      <header>
         <% if (message != "") {%>
           <%- include('./components/messages', {message: message, type: type})  %>
         <% } %>
         
-      <div class="auth-container">
-        <form action="/cadastro" method="post">
-          <div class="form-control">
-            <label for="text">Nome:</label>
-               <input type="text" name="nome" placeholder="Nome">
-          </div>
-          <div class="form-control">
-              <label for="email">E-mail:</label>
-              <input type="email" name="email" placeholder="E-mail">
-          </div>
-          <div class="form-control">
-              <label for="password">Senha:</label>
-              <input type="password" name="senha" placeholder="Senha">
-          </div>
-          <div class="form-control">
-              <input type="password" name="confirmaSenha" placeholder="Confirmar senha">
-          </div>
-          <input type="submit" value="Cadastrar">
-          <p>Já tem conta? <a href="/cadastro/login">Clique aqui</a></p>
-      </form>
-      </div>
+      </header>
+      
+    <div class="auth-container">
+      <form action="/cadastro" method="post">
+        <div class="form-control">
+          <label for="text">Nome:</label>
+             <input type="text" name="nome" placeholder="Nome">
+        </div>
+        <div class="form-control">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="E-mail">
+        </div>
+        <div class="form-control">
+            <label for="password">Senha:</label>
+            <input type="password" name="senha" placeholder="Senha">
+        </div>
+        <div class="form-control">
+            <input type="password" name="confirmaSenha" placeholder="Confirmar senha">
+        </div>
+        <input type="submit" value="Cadastrar">
+        <p>Já tem conta? <a href="/cadastro/login">Clique aqui</a></p>
+    </form>
+    </div>
 
-      <script src="script.js"></script>
+    </div>
+  
+  <script src="script.js"></script>
   </body>
          
