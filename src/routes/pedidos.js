@@ -3,7 +3,7 @@ const router = express.Router();
 
 const pedidosController = new(require('../controllers/api/Pedidos'))
 
-router.post('/novoPedido', pedidosController.create);
+router.post('/', pedidosController.create);
 router.put('/:id',pedidosController.updateOne);
 router.put('/associarProduto/:id', pedidosController.associarProduto);
 router.get('/dadosFaturamento', pedidosController.dadosFaturamento)
