@@ -8,27 +8,29 @@
 </head>
 
 <body>
-
+  <div class="cadMnu">
+    <header>
       <% if (message != "") {%>
         <%- include('./components/messages', {message: message, type: type})  %>
       <% } %>
-
-      <form action="/cadastro/login" method="post">
-      <div class="auth-container">
-        <h2>Entrar</h2>
-        <div class="form-control">
-            <label for="text">E-mail:</label>
-               <input type="email" name="email" placeholder="Digite seu email">
-          </div>
-            <div class="form-control">
-            <label for="text">Senha:</label>
-               <input type="password" name="senha" placeholder="Digite sua senha">
-          </div>
-            <input type="submit" value="Entrar">
-        </form>
-    </div>
-    <script src="script.js"></script>
-
+      
+    </header>
+    <form action="/cadastro/login" method="post">
+    <div class="auth-container">
+      <h2>Entrar</h2>
+      <div class="form-control">
+          <label for="text">E-mail:</label>
+             <input type="email" name="email" placeholder="Digite seu email">
+        </div>
+          <div class="form-control">
+          <label for="text">Senha:</label>
+             <input type="password" name="senha" placeholder="Digite sua senha">
+        </div>
+          <input type="submit" value="Entrar">
+      </form>
+  </div>
+  <script src="script.js"></script>
+  </div>
 
 </body>
        
