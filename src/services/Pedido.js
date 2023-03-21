@@ -56,8 +56,8 @@ module.exports = class Pedido{
                 valorTotal: 1,
                 quantidadeTotal: 1
         }}]);
-        return resultado;
+        const valorTotal = resultado.reduce((acumulador, item) => acumulador + item.valorTotal, 0);
+        return valorTotal;
     }
-     
-      
+
 }

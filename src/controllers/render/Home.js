@@ -12,13 +12,7 @@ module.exports = class Home{
               message = "";
             }, 1000);
             const produtosList = await itemService.find();
-            return res.render("index", {
-              produtosList,
-              item: null,
-              itemDelete: null,
-              message,
-              type,
-            });
+            return res.render("index", {produtosList,item: null,itemDelete: null,message,type,});
           } catch (err) {
             res.status(500).send({ error: err.message });
           }

@@ -22,7 +22,7 @@ module.exports = class HomeCliente{
           type,
         });
       } catch (err) {
-        res.status(500).send({ error: err.message });
+        res.redirect('/err');
       }
     }
 
@@ -42,7 +42,7 @@ module.exports = class HomeCliente{
           res.render("home", { produto: null, produtoUpdate, produtoList, message, type });
         }
         } catch (err) {
-          res.status(500).send({ error: err.message });
+          res.redirect('/err');
         }
       }
       async updateOneproduto(req, res){
