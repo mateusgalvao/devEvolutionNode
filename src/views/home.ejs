@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/menuCliente.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Delivery</title>
+</head>
+<body>
+
+<header class="menuCliente">
+  <nav>
+    <ul>
+      <li><a href="/home">Menu</a></li>
+      <li><a href="#">Meus Pedidos</a></li>
+    </ul>
+  </nav>
+  
+  <div class="topCardImage"></div>
+
+</header>  
+    <section class="secion2">
+      <div class="secion2menu">
+        <div class="secionTxt">
+          <h3>-Menus-</h3>
+          <p>"Somos a pizzaria que traz para você a autêntica experiência italiana em cada fatia - ingredientes frescos, massa crocante e sabor inigualável. 
+            Venha nos conhecer e descubra por que somos a escolha número um dos amantes de pizza!"
+          </p>
+        </div>
+        <div class="lista-horizontal">
+          <ul>
+            <% produtoList.forEach((el)=>{ %>
+            <li>
+              <div class="card">
+                <h1><%= el.nome %></h1>
+                <h3><%= el.sabor %> </h3>
+                <h3>R$ <%= el.preco %> </h3>
+                <br>
+                <form action="/pedido/novoPedido" method="POST">
+                  <input type="hidden" name="produto_id" value="<%= el._id %>">
+                  <label for="quantidade">Quantidade:</label>
+                  <div class="submitPedido">
+                    <select name="quantidade" id="quantidade">
+                      <% for (let i = 1; i <= 10; i++) { %>
+                      <option value="<%= i %>"><%= i %></option>
+                      <% } %>
+                    </select>
+                    <button type="submit">Confirma quantidade</button>
+                  </div>
+                  
+                  </form>
+                <a class="btn" href="/home/getById/<%= el._id %>/update">
+                  <i class="bi bi-bag-check"></i>
+                  Comprar</a>
+              </div>
+            </li>
+            <% }) %>
+          </ul>
+        </div>
+      </div>
+        
+      </div>
+    </section>
+    <% if (produtoUpdate !=null) { %>
+      <%- include('./components/modalPedido', {produto: produtoUpdate})  %>
+    <% } %>
+
+    <div class='footer'>
+      <div class='divFooter'>
+          <h3>Pizzaria I Maaddad, Rua Ouro Verde 787, 380-855, (49)9999-9999</h3>
+          <h5>Desenvolvido por Mtzin</h5>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+
+
+    
+  </body>
+    

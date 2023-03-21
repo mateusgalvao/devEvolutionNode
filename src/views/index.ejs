@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <title>Delivery</title>
+</head>
+
+<body>
+          <% if (message != "") {%>
+            <%- include('./components/messages', {message: message, type: type})  %>
+          <% } %>
+
+     <header>
+
+          <% if (item==null) { %>
+              <%- include('./components/form', {titleForm: "Você pode criar uma pizza no botão acima de adicionar ou gerar 10 pizzas pré cadastradas no botão abaixo", action: "create", value: "", idBtn: "addButton", nameBtn: "Adicionar"})%>
+          <% } else { %>
+              <%- include('./components/form', {titleForm: "Editar Item", action: `updateOne/${item._id}`, value: item.item, idBtn: "updateButton", nameBtn: "Atualizar"}) %>
+          <% } %>
+
+     </header>
+
+     <div class="menu">
+     
+      <div class="menuBotoes">
+        <div class="btnMenu" href=""><i class="bi bi-shop-window"></i>
+         <a href="/home">Produtos</a>
+        </div>
+      </div>
+
+      <div class="menuBotoes">
+        <div class="btnMenu" href=""><i class="bi bi-list-check"></i>
+          <a href="/">Pedidos</a>
+        </div>
+      </div>
+
+      <div class="menuBotoes">
+        <div class="btnMenu" href=""><i class="bi bi-graph-up-arrow"></i>
+          <a href="/dashboard">Dashboard</a>
+        </div>
+      </div>
+
+      <div class="menuBotoes">
+        <div class="btnMenu" href=""><i class="bi bi-people"></i>
+          <a href="/usuarios">Usuarios</a>
+        </div>
+      </div>
+      
+     </div>    
+
+     <section id="itens">
+     <form action="/gerar" method="post">
+      <button type="submit">Gerar Pizzas</button>
+     
+      <ul>
+        <br>
+        <% produtosList.forEach((el)=>{ %>
+            <li class="check-<%= el.check %>">
+                <div>
+                    <a href="/check/<%= el._id %>" class="check-<%= el.check %>"><%= el.nome %></a>
+                    <span><h1><%= el.sabor %></h1></span>
+                    <span><h3>R$ <%= el.preco %></h3></span>
+                    <span>Criado em <%= el.createdAt.toLocaleDateString('pt-BR') %></span> 
+                </div>
+                 
+                <div>
+                    <a class="btnUpdate" href="/getById/<%= el._id %>/update"><i class="bi bi-pencil-square"></i></a>
+                    <a class="btnDelete" href="/getById/<%= el._id %>/delete"><i class="bi bi-trash"></i></a>
+                </div>
+            </li>
+        <% }) %>
+    </ul>
+
+     </form>
+     
+   
+  </section>
+
+    <% if (itemDelete !=null) { %>
+      <%- include('./components/modalDel', {item: itemDelete})  %>
+    <% } %>
+
+
+   
+    <script src="script.js"></script>
+</body>
+
+</html>

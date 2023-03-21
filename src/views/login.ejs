@@ -1,0 +1,34 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <title>Delivery</title>
+</head>
+
+<body>
+
+      <% if (message != "") {%>
+        <%- include('./components/messages', {message: message, type: type})  %>
+      <% } %>
+
+      <form action="/cadastro/login" method="post">
+      <div class="auth-container">
+        <h2>Entrar</h2>
+        <div class="form-control">
+            <label for="text">E-mail:</label>
+               <input type="email" name="email" placeholder="Digite seu email">
+          </div>
+            <div class="form-control">
+            <label for="text">Senha:</label>
+               <input type="password" name="senha" placeholder="Digite sua senha">
+          </div>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+       

@@ -1,0 +1,321 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+nav {
+  background-image: linear-gradient(rgb(11, 12, 14),rgba(0, 0, 255, 0));
+  width: 100%;
+  height: 200px;
+  position: absolute;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 70px 20px 0 10px;
+}
+nav li:hover {
+  padding: 3px;
+  transition: .6s;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.msgErro{
+  background-color: #d5d5d5;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 20% ;
+}
+.msgErro a{
+  color: black;
+}
+
+.msgErro img{
+border-radius: 20px;
+}
+
+.menuCliente{
+    background-image: linear-gradient(to right, red,blue);
+    width: 100%;
+    height: 137px;
+}
+
+.topCardImage{
+  padding: 10px;
+  background-size: 100%;
+  background-image: url('./images/p1.jpg');
+  height: 85%;   
+  width: 98.5%;
+}
+
+
+
+.secion2menu{
+  margin-top: 5%;
+ margin-left: 10%;
+ margin-right: -8%;
+ width: 500px;
+ position: relative;
+ align-items: center;
+
+}
+
+.topCard{
+    padding: -50px;
+    width: 100vw;
+    height: 30vw;
+    overflow: hidden;
+}
+
+
+
+.secion2 {
+  display: flex;
+  flex-direction: column; 
+  width: 70%;
+  background-color: rgba(141, 2, 57, 0.105);
+  color: aliceblue;
+  height: 500px;
+  margin: -30px 0 0 0;
+  padding: auto;
+  margin-left:15%;
+  text-align: center;
+
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #413737;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+.secionTxt{
+  margin-left: 30px;
+  width: 700px;
+}
+
+.formCliente {
+  background-color: #d4d1d1;
+  position: relative;
+
+}
+
+.footer {
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 10vw;
+  background-color: rgba(67, 68, 69, 0.508);
+  position: relative;
+  bottom: -50px;
+}
+
+.divFooter {
+  margin-left: 5%;
+  color: aliceblue;
+  align-items: center;
+}
+
+
+.lista-horizontal {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 800px;
+}
+
+.lista-horizontal ul {
+  list-style: none; 
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-horizontal li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.card{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(111, 16, 16, 0.487);
+  border-radius: 10px;
+  width: 200px;
+  height: 280px;
+}
+.card h3{
+  margin-bottom: 0;
+}
+
+.btn {
+  color: white;
+  padding: 2px 4px;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  color: #00aa2a;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000080;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+
+div#card {
+  width: 30rem;
+  position: relative;
+  color: #fff;
+  background-color: #202024;
+  border-radius: 10px;
+}
+div#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+div#card h2 {
+  margin: 0;
+}
+
+div#card a#close {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+div#card a#close:hover {
+  background-color: #ff0000;
+  border-radius: 5rem;
+  padding: 0 0.3rem;
+}
+
+div#card hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+div#card p {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+div#btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+div#btns a {
+  text-decoration: none;
+  padding: .5rem;
+  width: 7rem;
+  text-align: center;
+  background-color: #202024;
+  font-size: 1.5rem;
+}
+
+button{
+    text-decoration: none;
+    padding: .5rem;
+    width: 9rem;
+    text-align: center;
+    background-color: #202024;
+    font-size: 1.5rem;
+    
+}
+
+div#btns a#btnNot {
+  color: #ff0000;
+  border: solid 1px #ff0000;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+div#btns a#btnNot:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+div#btns #btnYes {
+  color: #00aa2a;
+  border: solid 1px #00aa2a;
+  transition: all 0.3s ease-in-out;
+}
+
+div#btns button#btnYes:hover {
+  background-color: #00aa2a;
+  color: #fff;
+}
+
+.submitPedido{
+  display:grid;
+  align-items: center;
+  margin: 3px 5px 30px 30px;
+  height: 30px;
+  width: 100px;
+}
+.submitPedido button{
+  background-color: #5f0707;
+  border-radius: 20px;
+  font-size: 12px;
+  border: none;
+  color: #fff;
+  margin-top: 2px;
+}
+.submitPedido button:hover{
+  background-color: #075f20;
+  font-size: 12px;
+  border: none;
+  color: #fff;
+}
+
+.submitPedido select{
+  width: 35px;
+  font-size: 12px;
+  margin-left: 55px;
+}

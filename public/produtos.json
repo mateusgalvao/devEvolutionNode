@@ -1,0 +1,73 @@
+[
+    {
+      "nome": "Pizza",
+      "sabor": "Strogonoff Gado",
+      "quantidade": 2,
+      "preco": 15.55,
+      "check": false
+      
+    },
+    {
+      "nome": "Pizza",
+      "sabor": "Calabreza",
+      "quantidade": 2,
+      "preco": 14.55,
+      "check": false
+      
+    },
+    {
+      "nome": "Pizza",
+      "sabor": "Portuguesa",
+      "quantidade": 2,
+      "preco": 14.55,
+      "check": false
+      
+    },
+    {
+      "nome": "Pizza",
+      "sabor": "Marguerita",
+      "quantidade": 2,
+      "preco": 14.55,
+      "check": false
+      
+    },
+    {
+      "nome": "Pizza",
+      "sabor": "Bacon",
+      "quantidade": 2,
+      "preco": 14.55,
+      "check": false
+      
+    },
+    {
+      "nome": "Pizza",
+      "sabor": "File",
+      "quantidade": 2,
+      "preco": 14.55,
+      "check": false
+      
+    },
+    {
+      "nome": "Pizza",
+      "sabor": "Chocolate preto",
+      "quantidade": 2,
+      "preco": 14.55,
+      "check": false
+      
+    },
+    {
+      "nome": "Pizza",
+      "sabor": "Chocolate Branco",
+      "quantidade": 2,
+      "preco": 14.55,
+      "check": false
+      
+    },
+    {
+      "nome": "Pizza",
+      "sabor": "Prestígio",
+      "quantidade": 2,
+      "preco": 14.55,
+      "check": false
+    }
+  ]
