@@ -52,4 +52,4 @@ Algumas Ferramentas usadas para criar esse projeto:
 ## ✒️ Autores
 
 
-* **MAteus Galvão** - *Projeto API* - [umdesenvolvedor](https://github.com/mateusgalvao)
+* **Mateus Galvão** - *Projeto API* - [umdesenvolvedor](https://github.com/mateusgalvao)
