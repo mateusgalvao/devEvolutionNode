@@ -32,7 +32,7 @@ Obs: Falta concluir algumas funcionalidades de formulários, visualização com 
 Você precisa ter o banco de dados mongodb instalado na máquina:
 
 ```
-1 Faça o download desse codigo
+1 Faça o download desse codigo ou clone o repositório https://github.com/mateusgalvao/devEvolutionNode.git
 2 Execute o comando npm install para instalar as dependências
 3 Execute o comando npm start ou pm2 start ecosystem.config.js para iniciar
 ```
