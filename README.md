@@ -4,7 +4,7 @@ Nesse projeto você vai encontrar uma API para um sistema de produtos e pedidos,
 ### 📋 🚀 API
 1ª parte - O projeto foi desenvolvido para demonstrar o funcionamento da API Nodejs Express com autenticações JWT
 
-Consulte  adocumentação API **https://documenter.getpostman.com/view/18087733/2s93RKzb4y** para saber como testar API do projeto.
+Consulte  a documentação API **https://documenter.getpostman.com/view/18087733/2s93RKzb4y** para saber como testar API do projeto.
 
 ## Adicionais 
 A segunda parte do projeto é uma interface web simples:
