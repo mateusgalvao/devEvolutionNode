@@ -2,7 +2,7 @@
 
 Nesse projeto você vai encontrar uma API para um sistema de produtos e pedidos, vai encontrar rotas CRUD para produtos, usuários e pedidos e criação e listagem de clientes.
 ### 📋 🚀 API
-1ª parte - O projeto foi desenvlvido para demonstrar o funcionamento da API Nodejs Express com autenticações JWT
+1ª parte - O projeto foi desenvolvido para demonstrar o funcionamento da API Nodejs Express com autenticações JWT
 
 Consulte  adocumentação API **https://documenter.getpostman.com/view/18087733/2s93RKzb4y** para saber como testar API do projeto.
 
