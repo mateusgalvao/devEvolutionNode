@@ -3,7 +3,7 @@ const modelPedido = require('../models/pedidos');
 module.exports = class Pedido{
 
     async find(filter){
-        const pedido = await modelPedido.find(filter).populate({path: 'produto', select: 'nome -_id'});
+        const pedido = await modelPedido.find(filter).populate('produto');
         return pedido;
     }
 
