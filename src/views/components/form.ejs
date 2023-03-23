@@ -1,21 +1,5 @@
 <form action="/<%= action %>" method="post">
-    <div class="form-control">
-        <label for="name">Nome do produto:</label>
-        <input type="text" name="name" placeholder="Digite o nome do produto">
-    </div>
-    <div class="form-control">
-        <label for="preco">Preço do produto:</label>
-        <input type="text" name="preco" placeholder="Digite o preço">
-    </div>
-    <div class="form-control">
-        <label for="description">Descrição do produto:</label>
-        <textarea name="description" placeholder="Descrição do produto"></textarea>
-    </div>
-    <div class="form-control">
-        <label for="image">Imagem:</label>
-        <input type="text" name="image" placeholder="Insira a URL da imagem" />
-    </div>
-</form>
+    <input type="text" name="nome" id="nome" placeholder="Insira um item" value="<%= value %>">
     <button id="<%= idBtn %>" type="submit"><%= nameBtn %></button>
 </form>
 <br>
