@@ -2,9 +2,9 @@
 
 Nesse projeto você vai encontrar uma API para um sistema de produtos e pedidos, vai encontrar rotas CRUD para produtos, usuários e pedidos e criação e listagem de clientes.
 ### 📋 🚀 API
-1ª parte - O projeto foi desenvlvido para demonstrar o funcionamento da API Nodejs Express com autenticações JWT
+1ª parte - O projeto foi desenvolvido para demonstrar o funcionamento da API Nodejs Express com autenticações JWT
 
-Consulte  adocumentação API **https://documenter.getpostman.com/view/18087733/2s93RKzb4y** para saber como testar API do projeto.
+Consulte  a documentação API **https://documenter.getpostman.com/view/18087733/2s93RKzb4y** para saber como testar API do projeto.
 
 ## Adicionais 
 A segunda parte do projeto é uma interface web simples:
@@ -32,7 +32,7 @@ Obs: Falta concluir algumas funcionalidades de formulários, visualização com 
 Você precisa ter o banco de dados mongodb instalado na máquina:
 
 ```
-1 Faça o download desse codigo
+1 Faça o download desse codigo ou clone o repositório https://github.com/mateusgalvao/devEvolutionNode.git
 2 Execute o comando npm install para instalar as dependências
 3 Execute o comando npm start ou pm2 start ecosystem.config.js para iniciar
 ```
@@ -52,4 +52,4 @@ Algumas Ferramentas usadas para criar esse projeto:
 ## ✒️ Autores
 
 
-* **MAteus Galvão** - *Projeto API* - [umdesenvolvedor](https://github.com/mateusgalvao)
+* **Mateus Galvão** - *Projeto API* - [umdesenvolvedor](https://github.com/mateusgalvao)
