@@ -15,8 +15,23 @@ module.exports = class Produto{
     }
 
     async create(body){
-        const nome = await modelProduto.create(body);
-        return nome;
+        const {nome, preco, sabor} = body;
+      
+        if(!nome){ return "O Nome é obrigatório";}
+        if(!preco){ return "O preco é Obrigatório";}
+        if(!sabor){ return "O sabor é Obrigatório";}
+                
+        const produto = new modelProduto({
+          nome:nome,
+          sabor:sabor,
+          preco:preco,
+        });
+      
+        try {
+          return await produto.save();
+        } catch (error) {
+          return error;
+        }
     }
 
     async gerarProdutos(produto) {

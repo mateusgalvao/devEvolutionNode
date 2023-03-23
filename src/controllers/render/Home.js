@@ -29,16 +29,13 @@ module.exports = class Home{
     }
 
     async criarProduto(req, res){
-        const nome = req.body;
-
-        if (!nome.nome) {
+        const produto = await itemService.create(req.body)
+        if (!produto.nome && !produto.preco) {
             message = "Insira um texto, antes de adicionar um produto!";
             type = "danger";
             return res.redirect("/");
         }
-
         try {
-            await itemService.create(nome);
             message = "Item criado com sucesso!";
             type = "success";
             return res.redirect("/");
@@ -46,7 +43,6 @@ module.exports = class Home{
             res.status(500).send({ error: err.message });
         }
     }
-
     async createProdutoMany(req, res){
       const retorno = await itemService.createMany(req.body);
       res.json(retorno)

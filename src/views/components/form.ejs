@@ -1,5 +1,17 @@
+<h1>Criar produto</h1>
 <form action="/<%= action %>" method="post">
-    <input type="text" name="nome" id="nome" placeholder="Insira um item" value="<%= value %>">
+    <div class="form-control">
+        <label for="nome">Nome do produto:</label>
+        <input type="text" name="nome" placeholder="Digite o nome do produto">
+    </div>
+    <div class="form-control">
+        <label for="preco">Preço do produto:</label>
+        <input type="text" name="preco" placeholder="Digite o preço">
+    </div>
+    <div class="form-control">
+        <label for="sabor">Sabor do produto:</label>
+        <textarea name="sabor" placeholder="Sabor do produto"></textarea>
+    </div>
     <button id="<%= idBtn %>" type="submit"><%= nameBtn %></button>
 </form>
 <br>
