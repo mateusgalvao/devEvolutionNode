@@ -32,6 +32,25 @@ nav a {
   font-weight: bold;
 }
 
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.form-control input,
+.form-control textarea {
+  background-color: #d8d0d0;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #f6982d;
+}
+
 .msgErro{
   background-color: #d5d5d5;
   width: 100%;
